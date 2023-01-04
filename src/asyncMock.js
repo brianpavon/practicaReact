@@ -1,4 +1,4 @@
-const products = [
+export const products = [
     {
         id:1,
         name:'iphone 12',
@@ -19,10 +19,11 @@ const products = [
     }
 ]
 
-const getProducts = ()=>{
+export const getProducts = ()=>{
     return new Promise((res)=>{
         setTimeout(() => {
             res(products)
         }, 1500);
     })
 }
+
